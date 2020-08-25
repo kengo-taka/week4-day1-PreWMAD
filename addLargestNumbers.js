@@ -1,5 +1,7 @@
 const addLargestNumbers = function(data) {
-  // Put your solution here
+
+  data.sort(function(a,b) { return b-a;} )[1];
+  console.log(data[0] + data[1]);
 };
 
 console.log(addLargestNumbers([1, 10]));
